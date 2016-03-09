@@ -12,6 +12,9 @@ namespace RogueGame
         public Armor Armor { get; set; }
         public int XPos = 0;
         public int YPos = 0;
+        public int Health { get; set; }
+        public int Mana { get; set; }
+
 
         public Player()
         {
@@ -50,6 +53,11 @@ namespace RogueGame
             throw new NotImplementedException();
         }
 
+        public void Update(int i)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(char key)
         {
             switch(key)
@@ -69,6 +77,12 @@ namespace RogueGame
                 case 'd':
                     Console.WriteLine("R");
                     UpdateXPosition('r');
+                    break;
+                case 'e':
+                    //interact button
+                    break;
+                case 'f':
+                    //inventory button
                     break;
                 default:
                     Console.WriteLine("Invalid Key Press");

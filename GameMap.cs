@@ -11,13 +11,14 @@ namespace RogueGame
         public static int Height = 25;
 
         List<int> map;
+        Random rand = new Random();
 
         public enum TileType
         {
+            Player,
             Field,
             Mountain,
             Water,
-            Player,
             Enemy,
             Boss,
             Item,
@@ -29,18 +30,25 @@ namespace RogueGame
             for(int i = 0; i >= Width; i++)
             {
                 //add items to map width?
+                map.Add(rand.Next(1, 6));
                 for(int j = 0; j >= Height; j++)
                 {
                     //add items to map height?
+                    map.Add(rand.Next(1, 6));
                 }
             }
         }
 
         public void Update()
         {
-            map.
+            throw new NotImplementedException();
         }
-        
+
+        public void Update(int i)
+        {
+            
+        }
+
         public void Update(char c)
         {
             throw new NotImplementedException();

@@ -9,6 +9,7 @@ namespace RogueGame
     interface IUpdatable
     {
         void Update();
+        void Update(int i);
         void Update(char key);
     }
 }
